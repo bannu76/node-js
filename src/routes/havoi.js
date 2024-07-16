@@ -4,7 +4,8 @@ const router = express.Router();
 const havoiController = require("../controllers/getdata");
 const getmainpageController = require("../controllers/getmainpage");
 
-router.get("/:id", havoiController.getdata);
 router.get("/", getmainpageController.getmainpage);
+
+router.get("/:id", havoiController.getdata);
 
 module.exports = router;

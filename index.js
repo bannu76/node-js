@@ -2,9 +2,9 @@ const express = require("express");
 var cors = require("cors");
 require("dotenv").config();
 
-const sequelize = require("../src/utils/database");
+const sequelize = require("./src/utils/database");
 
-const HavoiData = require("../src/routes/havoi");
+const HavoiData = require("./src/routes/havoi");
 
 const app = express();
 app.use(express.json());
