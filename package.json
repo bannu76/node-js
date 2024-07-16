@@ -1,20 +1,20 @@
 {
   "name": "backend",
   "description": "backend practice",
-  "main": "api/index.js",
+  "main": ".api/index.js",
   "version":2,
     "builds":[{
-        "src":"index.js",
+        "src":"./index.js",
         "use":"@vercel/node"
     }],
     "routes":[{
         "src":"/(.*)",
-        "dest":"api/index.js"
+        "dest":"/"
     }]  ,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon api/index.js",
-    "dev": "nodemon api/index.js"
+    "start": "nodemon .api/index.js",
+    "dev": "nodemon .api/index.js"
   },
   "keywords": [
     "nodejs",
